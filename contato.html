@@ -4,55 +4,96 @@
 <head>
     <meta charset="UTF-8">
     <title>Contato</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- CSS Interno-->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <h3>Contatos:</h3>
-    Telefone: (81) 9.9999-8888
-    <br>
-    E-mail: alguma@gmail.com
-    <br>
-    Endereço: Rua da silva, 345
-    <hr>
-    <h3>Solicite seu orçamento:</h3>
-    <form action="" method="">
-        <table>
-            <tr>
-                <td><label for="nome">Nome:</label></td>
-                <td> <input type="text" name="nome" id="nome"></td>
-            </tr>
-            <tr>
-                <td><label for="email">E-mail:</label></td>
-                <td><input type="email" name="email" id="email"><br></td>
-            </tr>
-            <tr>
-                <td><label for="assunto">Assunto:</label></td>
-                <td>
-                    <select name="assunto" id="assunto">
-                        <option value="cas">Festas de casamento</option>
-                        <option value="con">Confraternizações</option>
-                        <option value="sim">Bolos simples</option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <td><label for="dataevento">Informe a data do seu evento:</label></td>
-                <td><input type="date" name="dataevento" id="dataevento"></td>
-            </tr>
-            <tr>
-                <td><label for="mensagem">Mensagem:</label></td>
-                <td>
-                    <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2"><input type="submit" value="Enviar"></td>
-            </tr>
-        </table>
-    </form>
-    <br>
-    <a href="index.html">Voltar</a>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Maria Silva</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cursos.html">Cursos e Especilizações</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="hobbies.html">Meus Hobbies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contato.html">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container" id="conteudo">
+        <div>
+            <h3>Contatos:</h3>
+            Telefone: (81) 9.9999-8888
+            <br>
+            E-mail: alguma@gmail.com
+            <br>
+            Endereço: Rua da silva, 345
+        </div>
+        
+        <h3>Solicite seu orçamento:</h3>
+        <form action="" method="">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" class="form-control" name="nome" id="nome">
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" class="form-control" name="email" id="email">
+            </div>
+            <div class="form-group">
+                <label for="assunto">Assunto:</label>
+                <select class="form-control" name="assunto" id="assunto">
+                    <option value="cas">Festas de casamento</option>
+                    <option value="con">Confraternizações</option>
+                    <option value="sim">Bolos simples</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="dataevento">Informe a data do seu evento:</label>
+                <input type="date" class="form-control" name="dataevento" id="dataevento">
+            </div>
+            <div class="form-group">
+                <label for="mensagem">Mensagem:</label>
+                <textarea class="form-control" name="mensagem" id="mensagem" rows="5"></textarea>
+            </div>
+            <div class="form-group">
+                <input type="submit" class="btn btn-primary" value="Enviar">
+            </div>
+        </form>
+    </div>
+    
+    </div>
+
+    <!--Início rodapé-->
+    <footer class="fixed-bottom p-3 text-light text-center">
+        © Copyright - Minha marca - 2023.
+   </footer>
+   <!--Fim rodapé-->
+
+    <!-- Bootstrap Bundle com Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
