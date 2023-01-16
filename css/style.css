@@ -20,6 +20,14 @@ nav{
     background-color: #C58940;
 }
 
+.container {
+    padding: 20px;
+}
+
+.row {
+    padding: 10px;
+}
+
 /*Rodapé
 ------------------------------------*/
 footer{
